@@ -24,17 +24,20 @@ Partial Class FrmNuevaAsignatura
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmNuevaAsignatura))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.BtnNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.BtnGuardar = New System.Windows.Forms.ToolStripButton()
+        Me.BtnEditar = New System.Windows.Forms.ToolStripButton()
+        Me.BtnEliminar = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtCreditos = New System.Windows.Forms.TextBox()
+        Me.TxtNombre = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DgvRegistros = New System.Windows.Forms.DataGridView()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TxtDato = New System.Windows.Forms.TextBox()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -43,48 +46,48 @@ Partial Class FrmNuevaAsignatura
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(345, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(467, 25)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'ToolStripButton1
+        'BtnNuevo
         '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton1.Text = "Nuevo"
+        Me.BtnNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnNuevo.Image = CType(resources.GetObject("BtnNuevo.Image"), System.Drawing.Image)
+        Me.BtnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnNuevo.Name = "BtnNuevo"
+        Me.BtnNuevo.Size = New System.Drawing.Size(23, 22)
+        Me.BtnNuevo.Text = "Nuevo"
         '
-        'ToolStripButton2
+        'BtnGuardar
         '
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton2.Text = "Guardar"
+        Me.BtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnGuardar.Image = CType(resources.GetObject("BtnGuardar.Image"), System.Drawing.Image)
+        Me.BtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnGuardar.Name = "BtnGuardar"
+        Me.BtnGuardar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnGuardar.Text = "Guardar"
         '
-        'ToolStripButton3
+        'BtnEditar
         '
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton3.Text = "Editar"
+        Me.BtnEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnEditar.Image = CType(resources.GetObject("BtnEditar.Image"), System.Drawing.Image)
+        Me.BtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnEditar.Name = "BtnEditar"
+        Me.BtnEditar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnEditar.Text = "Editar"
         '
-        'ToolStripButton4
+        'BtnEliminar
         '
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton4.Text = "Eliminar"
+        Me.BtnEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnEliminar.Image = CType(resources.GetObject("BtnEliminar.Image"), System.Drawing.Image)
+        Me.BtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnEliminar.Text = "Eliminar"
         '
         'GroupBox1
         '
@@ -94,18 +97,23 @@ Partial Class FrmNuevaAsignatura
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(14, 38)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(319, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(416, 100)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
-        'Label1
+        'TxtCreditos
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(19, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre:"
+        Me.TxtCreditos.Location = New System.Drawing.Point(72, 58)
+        Me.TxtCreditos.Name = "TxtCreditos"
+        Me.TxtCreditos.Size = New System.Drawing.Size(100, 20)
+        Me.TxtCreditos.TabIndex = 3
+        '
+        'TxtNombre
+        '
+        Me.TxtNombre.Location = New System.Drawing.Point(72, 19)
+        Me.TxtNombre.Name = "TxtNombre"
+        Me.TxtNombre.Size = New System.Drawing.Size(328, 20)
+        Me.TxtNombre.TabIndex = 2
         '
         'Label2
         '
@@ -116,27 +124,22 @@ Partial Class FrmNuevaAsignatura
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Creditos:"
         '
-        'TxtNombre
+        'Label1
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(72, 19)
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(212, 20)
-        Me.TxtNombre.TabIndex = 2
-        '
-        'TxtCreditos
-        '
-        Me.TxtCreditos.Location = New System.Drawing.Point(72, 58)
-        Me.TxtCreditos.Name = "TxtCreditos"
-        Me.TxtCreditos.Size = New System.Drawing.Size(100, 20)
-        Me.TxtCreditos.TabIndex = 3
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(19, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nombre:"
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DgvRegistros)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 144)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 190)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(321, 260)
-        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.Size = New System.Drawing.Size(418, 214)
+        Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Registro guardado: 0"
         '
@@ -149,14 +152,43 @@ Partial Class FrmNuevaAsignatura
         Me.DgvRegistros.Location = New System.Drawing.Point(3, 16)
         Me.DgvRegistros.Name = "DgvRegistros"
         Me.DgvRegistros.ReadOnly = True
-        Me.DgvRegistros.Size = New System.Drawing.Size(315, 241)
+        Me.DgvRegistros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DgvRegistros.Size = New System.Drawing.Size(412, 195)
         Me.DgvRegistros.TabIndex = 0
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(11, 164)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(138, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Escriba el nombre a buscar:"
+        '
+        'TxtDato
+        '
+        Me.TxtDato.Location = New System.Drawing.Point(155, 164)
+        Me.TxtDato.Name = "TxtDato"
+        Me.TxtDato.Size = New System.Drawing.Size(186, 20)
+        Me.TxtDato.TabIndex = 3
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.Location = New System.Drawing.Point(347, 161)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBuscar.TabIndex = 4
+        Me.BtnBuscar.Text = "Buscar"
+        Me.BtnBuscar.UseVisualStyleBackColor = True
         '
         'FrmNuevaAsignatura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(345, 416)
+        Me.ClientSize = New System.Drawing.Size(467, 416)
+        Me.Controls.Add(Me.BtnBuscar)
+        Me.Controls.Add(Me.TxtDato)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
@@ -174,10 +206,10 @@ Partial Class FrmNuevaAsignatura
     End Sub
 
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripButton1 As ToolStripButton
-    Friend WithEvents ToolStripButton2 As ToolStripButton
-    Friend WithEvents ToolStripButton3 As ToolStripButton
-    Friend WithEvents ToolStripButton4 As ToolStripButton
+    Friend WithEvents BtnNuevo As ToolStripButton
+    Friend WithEvents BtnGuardar As ToolStripButton
+    Friend WithEvents BtnEditar As ToolStripButton
+    Friend WithEvents BtnEliminar As ToolStripButton
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TxtCreditos As TextBox
     Friend WithEvents TxtNombre As TextBox
@@ -185,4 +217,7 @@ Partial Class FrmNuevaAsignatura
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DgvRegistros As DataGridView
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TxtDato As TextBox
+    Friend WithEvents BtnBuscar As Button
 End Class
