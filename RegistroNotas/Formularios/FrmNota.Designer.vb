@@ -35,6 +35,7 @@ Partial Class FrmNota
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DgvRegistros = New System.Windows.Forms.DataGridView()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -43,7 +44,7 @@ Partial Class FrmNota
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(514, 25)
@@ -155,6 +156,15 @@ Partial Class FrmNota
         Me.DgvRegistros.Size = New System.Drawing.Size(487, 229)
         Me.DgvRegistros.TabIndex = 0
         '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton1.Text = "ToolStripButton1"
+        '
         'FrmNota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -188,4 +198,5 @@ Partial Class FrmNota
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DgvRegistros As DataGridView
+    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class
