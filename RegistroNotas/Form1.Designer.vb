@@ -28,6 +28,7 @@ Partial Class Form1
         Me.RegistrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AsignaturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaAsignaturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,7 +56,7 @@ Partial Class Form1
         '
         'RegistrosToolStripMenuItem
         '
-        Me.RegistrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsignaturaToolStripMenuItem, Me.NuevaAsignaturaToolStripMenuItem})
+        Me.RegistrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsignaturaToolStripMenuItem, Me.NuevaAsignaturaToolStripMenuItem, Me.NotasToolStripMenuItem})
         Me.RegistrosToolStripMenuItem.Name = "RegistrosToolStripMenuItem"
         Me.RegistrosToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
         Me.RegistrosToolStripMenuItem.Text = "Registros"
@@ -72,12 +73,19 @@ Partial Class Form1
         Me.NuevaAsignaturaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevaAsignaturaToolStripMenuItem.Text = "Nueva Asignatura"
         '
+        'NotasToolStripMenuItem
+        '
+        Me.NotasToolStripMenuItem.Name = "NotasToolStripMenuItem"
+        Me.NotasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NotasToolStripMenuItem.Text = "Notas"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(332, 213)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -94,4 +102,5 @@ Partial Class Form1
     Friend WithEvents RegistrosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AsignaturaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NuevaAsignaturaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NotasToolStripMenuItem As ToolStripMenuItem
 End Class

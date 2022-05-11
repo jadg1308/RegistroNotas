@@ -95,6 +95,12 @@
     <Compile Include="Formularios\FrmAsignatura.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\FrmNota.Designer.vb">
+      <DependentUpon>FrmNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\FrmNuevaAsignatura.Designer.vb">
       <DependentUpon>FrmNuevaAsignatura.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAsignatura.resx">
       <DependentUpon>FrmAsignatura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmNota.resx">
+      <DependentUpon>FrmNota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmNuevaAsignatura.resx">
       <DependentUpon>FrmNuevaAsignatura.vb</DependentUpon>
