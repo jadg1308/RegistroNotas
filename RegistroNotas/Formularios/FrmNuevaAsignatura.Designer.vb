@@ -38,6 +38,7 @@ Partial Class FrmNuevaAsignatura
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtDato = New System.Windows.Forms.TextBox()
         Me.BtnBuscar = New System.Windows.Forms.Button()
+        Me.BtnImprimir = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -46,7 +47,7 @@ Partial Class FrmNuevaAsignatura
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar, Me.BtnImprimir})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(467, 25)
@@ -181,6 +182,15 @@ Partial Class FrmNuevaAsignatura
         Me.BtnBuscar.Text = "Buscar"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
+        'BtnImprimir
+        '
+        Me.BtnImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnImprimir.Image = CType(resources.GetObject("BtnImprimir.Image"), System.Drawing.Image)
+        Me.BtnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnImprimir.Name = "BtnImprimir"
+        Me.BtnImprimir.Size = New System.Drawing.Size(23, 22)
+        Me.BtnImprimir.Text = "Imprimir"
+        '
         'FrmNuevaAsignatura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -220,4 +230,5 @@ Partial Class FrmNuevaAsignatura
     Friend WithEvents Label3 As Label
     Friend WithEvents TxtDato As TextBox
     Friend WithEvents BtnBuscar As Button
+    Friend WithEvents BtnImprimir As ToolStripButton
 End Class
