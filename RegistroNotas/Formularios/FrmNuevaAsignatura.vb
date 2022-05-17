@@ -2,10 +2,11 @@
     Dim asign As New BDUCADataSetTableAdapters.AsignaturaTableAdapter
     Dim idAsign As Integer
     Dim estado As Boolean
-    Dim rptAsig As New BDUCADataSet.AsignaturaDataTable
+    Dim tblAsig As New BDUCADataSet.AsignaturaDataTable
     Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
-        asign.Fill(rptAsig)
-        VerReporte(rptAsig, "DsDatos", "RptAsignatura.rdlc")
+        asign.Fill(tblAsig)
+        VerReporte(tblAsig, "DsDatos", "d:\Reportes\RptAsignatura.rdlc")
+
     End Sub
 
     Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
