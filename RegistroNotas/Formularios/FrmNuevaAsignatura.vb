@@ -32,6 +32,8 @@
     Sub llenarGrid()
         DgvRegistros.DataSource = asign.GetData
         DgvRegistros.Refresh()
+        'ocultar columna
+        DgvRegistros.Columns().Item(3).Visible = False
         GroupBox2.Text = "Registros guardados: " & DgvRegistros.Rows.Count.ToString
     End Sub
 

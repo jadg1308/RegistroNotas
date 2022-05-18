@@ -51,7 +51,7 @@ Partial Class FrmNuevaAsignatura
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar, Me.BtnImprimir, Me.BtnImprimirFicha})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(467, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(452, 25)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -206,7 +206,7 @@ Partial Class FrmNuevaAsignatura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 416)
+        Me.ClientSize = New System.Drawing.Size(452, 416)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtDato)
         Me.Controls.Add(Me.Label3)
