@@ -28,6 +28,8 @@ Partial Class FrmNuevaAsignatura
         Me.BtnGuardar = New System.Windows.Forms.ToolStripButton()
         Me.BtnEditar = New System.Windows.Forms.ToolStripButton()
         Me.BtnEliminar = New System.Windows.Forms.ToolStripButton()
+        Me.BtnImprimir = New System.Windows.Forms.ToolStripButton()
+        Me.BtnImprimirFicha = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TxtCreditos = New System.Windows.Forms.TextBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
@@ -38,7 +40,6 @@ Partial Class FrmNuevaAsignatura
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtDato = New System.Windows.Forms.TextBox()
         Me.BtnBuscar = New System.Windows.Forms.Button()
-        Me.BtnImprimir = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -47,7 +48,7 @@ Partial Class FrmNuevaAsignatura
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar, Me.BtnImprimir})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar, Me.BtnImprimir, Me.BtnImprimirFicha})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(467, 25)
@@ -89,6 +90,25 @@ Partial Class FrmNuevaAsignatura
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(23, 22)
         Me.BtnEliminar.Text = "Eliminar"
+        '
+        'BtnImprimir
+        '
+        Me.BtnImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnImprimir.Image = CType(resources.GetObject("BtnImprimir.Image"), System.Drawing.Image)
+        Me.BtnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnImprimir.Name = "BtnImprimir"
+        Me.BtnImprimir.Size = New System.Drawing.Size(23, 22)
+        Me.BtnImprimir.Text = "Imprimir"
+        '
+        'BtnImprimirFicha
+        '
+        Me.BtnImprimirFicha.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BtnImprimirFicha.Enabled = False
+        Me.BtnImprimirFicha.Image = CType(resources.GetObject("BtnImprimirFicha.Image"), System.Drawing.Image)
+        Me.BtnImprimirFicha.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.BtnImprimirFicha.Name = "BtnImprimirFicha"
+        Me.BtnImprimirFicha.Size = New System.Drawing.Size(23, 22)
+        Me.BtnImprimirFicha.Text = "Imprimir Ficha"
         '
         'GroupBox1
         '
@@ -182,15 +202,6 @@ Partial Class FrmNuevaAsignatura
         Me.BtnBuscar.Text = "Buscar"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
-        'BtnImprimir
-        '
-        Me.BtnImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnImprimir.Image = CType(resources.GetObject("BtnImprimir.Image"), System.Drawing.Image)
-        Me.BtnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnImprimir.Name = "BtnImprimir"
-        Me.BtnImprimir.Size = New System.Drawing.Size(23, 22)
-        Me.BtnImprimir.Text = "Imprimir"
-        '
         'FrmNuevaAsignatura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -231,4 +242,5 @@ Partial Class FrmNuevaAsignatura
     Friend WithEvents TxtDato As TextBox
     Friend WithEvents BtnBuscar As Button
     Friend WithEvents BtnImprimir As ToolStripButton
+    Friend WithEvents BtnImprimirFicha As ToolStripButton
 End Class

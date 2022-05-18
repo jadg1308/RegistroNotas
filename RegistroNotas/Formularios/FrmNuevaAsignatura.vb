@@ -3,9 +3,15 @@
     Dim idAsign As Integer
     Dim estado As Boolean
     Dim tblAsig As New BDUCADataSet.AsignaturaDataTable
+
+    Private Sub BtnImprimirFicha_Click(sender As Object, e As EventArgs) Handles BtnImprimirFicha.Click
+        asign.FillBy1(tblAsig, idAsign)
+        VerReporte(tblAsig, "DsDatos", "C:\Reportes\RptFichaAsig.rdlc")
+    End Sub
+
     Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
         asign.Fill(tblAsig)
-        VerReporte(tblAsig, "DsDatos", "d:\Reportes\RptAsignatura.rdlc")
+        VerReporte(tblAsig, "DsDatos", "C:\Reportes\RptAsignatura.rdlc")
 
     End Sub
 
@@ -15,6 +21,7 @@
         BtnGuardar.Enabled = True
         BtnEliminar.Enabled = False
         BtnEditar.Enabled = False
+        BtnImprimirFicha.Enabled = False
         TxtNombre.Focus()
     End Sub
 
@@ -77,6 +84,7 @@
             BtnGuardar.Enabled = False
             BtnEditar.Enabled = True
             BtnEliminar.Enabled = True
+            BtnImprimirFicha.Enabled = True
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
         End Try
